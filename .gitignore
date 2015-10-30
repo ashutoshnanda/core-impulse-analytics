@@ -1,0 +1,8 @@
+#RStudio Files
+.Rproj.user
+.Rhistory
+.RData
+
+#Google Analytics Token
+#We want to ignore it since each of you need your own and I won't let you mooch off mine. :P
+.ga-token.rds
