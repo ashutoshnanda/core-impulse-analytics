@@ -22,10 +22,13 @@ There are a couple hoops to jump through, so let's get started:
 ```
 brew tap theseal/ssh-askpass
 brew install ssh-askpass
-```<br><br>
+```
+
 In any case, make sure to run this line when you're done: `sudo ln -s /usr/local/bin/ssh-askpass /usr/libexec/ssh-askpass`. (Change the first path if you didn't install with `brew`.)
 
-2. Set up your repository with an SSH URL rather than an HTTPS URL: `git remote add origin git@github.com:<USERNAME>/<REPONAME>.git`. <br><br> If you've already added a remote, this information is also located in `<REPODIR>/.git/config`; just look    for the heading `[remote "origin"]` and add the following line: `url = git@github.com:<USERNAME>/<REPONAME>.git`.
+2. Set up your repository with an SSH URL rather than an HTTPS URL: `git remote add origin git@github.com:<USERNAME>/<REPONAME>.git`. 
+
+If you've already added a remote, this information is also located in `<REPODIR>/.git/config`; just look    for the heading `[remote "origin"]` and add the following line: `url = git@github.com:<USERNAME>/<REPONAME>.git`.
 
 3. For the final bit of magic, walk through [this article](https://help.github.com/articles/generating-ssh-keys/). This will make sure that your computer can talk to GitHub.
 
